@@ -22,7 +22,6 @@
             <a href="https://ujjwalaryal.blogspot.com/">Blog</a>
             <a href="about.html">About</a>
             <a href="https://github.com/ujjwalaryal">GitHub</a>
-            <!-- <a href="/adeshpande3.github.io/projects">Projects</a> -->
             <a href="resume.pdf" target="_blank">Resume</a>
           </nav>
         </header>
@@ -31,27 +30,107 @@
 
 
 <!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
- <!--    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="container">
       <article class="post">
-  <h1>A Beginner's Guide To Understanding Convolutional Neural Networks</h1>
+  <h1>Some Cool Programming Problems</h1>
 
-  <div class="entry">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-<img src="/assets/Cover.png">
-<a
-href="http://www.kdnuggets.com/2016/09/top-news-week-0905-0911.html"><img
-src="http://www.kdnuggets.com/images/top-kdnuggets-blogger-2016-sep-gold.jpg"
-width="147" height=147 alt="Top KDnuggets Blogger - Gold, September
-2016"></a>
-<h2><strong>Introduction</strong></h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Convolutional neural networks. Sounds like a weird combination of biology and math with a little CS sprinkled in, but these networks have been some of the most influential innovations in the field of computer vision. 2012 was the first year that neural nets grew to prominence as Alex Krizhevsky used them to win that year&rsquo;s ImageNet competition (basically, the annual Olympics of computer vision), dropping the classification error record from 26% to 15%, an astounding improvement at the time.Ever since then, a host of companies have been using deep learning at the core of their services. Facebook uses neural nets for their automatic tagging algorithms, Google for their photo search, Amazon for their product recommendations, Pinterest for their home feed personalization, and Instagram for their search infrastructure.</p>
+<!-- Problem 1 -->
+<h2><strong>Extract ‘k’ bits from a given position in a number.</strong></h2>
+<p>How to extract ‘k’ bits from a given position ‘p’ in a number?<br><br>
+</p> <h4> Examples<br></h4>
+<p>
+1. Input : number = 171<br>
+&emsp;&emsp;&emsp;&emsp;k = 5<br>
+&emsp;&emsp;&emsp;&emsp;p = 2<br>
+&emsp;Output : The extracted number is 21
+171 is represented as 0101011 in binary,
+so, you should get only 10101 i.e. 21.<br><br>
+2. Input : number = 72<br>
+&emsp;&emsp;&emsp;&emsp;k = 5<br>
+&emsp;&emsp;&emsp;&emsp;p = 1<br>
+&emsp;Output : The extracted number is 8
+72 is represented as 1001000 in binary,
+so, you should get only 01000 i.e 8.<br>
+</p>
+<h4><strong>Solution</strong></h4>
+<p>
+  1. Right shift number by p-1.<br>
+  2. Do bit wise AND of k set bits with the modified number. We can get k set bits by doing (1 << k) – 1.<br>
+</p>
+<h4><strong>Program</strong></h4>
+<p>
+// C program to extract k bits from a given position.<br>
+#include<stdio.h> <br>
+ 
+// Function to extract k bits from p position<br>
+// and returns the extracted value as integer<br>
+int bitExtracted(int number, int k, int p){<br>
+    &emsp;&emsp;return (((1 << k) - 1) & (number >> (p - 1)));<br>
+}<br>
+ 
+// Driver code<br>
+int main(){
+    &emsp;&emsp;int number = 171, k = 5, p = 2;<br>
+    &emsp;&emsp;printf("The extracted number is %d",bitExtracted(number, k, p));<br>
+    &emsp;&emsp;return 0;<br>
+}<br>
 
+</p>
+
+  <a href="https://www.geeksforgeeks.org/extract-k-bits-given-position-number/">Published in GeeksforGeeks</a>
   <div class="date">
-    Written on July 20, 2016
-  </div> -->
+    Written on December 20, 2017 by Ujjwal Aryal
+  </div>
+<!-- Problem 1 -->
 
-<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Problem 2 -->
+<h2><strong>Largest of two distinct numbers without using any conditional statements or operators</strong></h2>
+<p>Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C++/Java).<br><br>
+</p> <h4> Examples<br></h4>
+<p>
+1. Input : a = 14, b = 15<br>
+   &emsp;Output : 15<br>
+
+2. Input: a = 1233133, b = 124<br>
+   &emsp;Output: 1233133 <br>
+</p>
+<h4><strong>Solution</strong></h4>
+<p>
+The approach is to return the value on the basis of the below expression:<br>
+
+&emsp;&emsp;&emsp;&emsp;<strong>a * (bool)(a / b) + b * (bool)(b / a)</strong><br>
+
+The expression a / b will give 1 if a > b and 0 if a < b (only after typecasting the result to bool).
+Hence, the answer will be of the form either a + 0 or 0 + b depending upon which one is greater.<br>
+</p>
+<h4><strong>Program</strong></h4>
+<p>
+// C++ program for above implementation<br>
+#include <iostream><br>
+using namespace std;<br>
+// Function to find the largest number<br>
+int largestNum(int a, int b){<br>
+    &emsp;&emsp;return a * (bool)(a / b) + b * (bool)(b / a);<br>
+}<br>
+ 
+// Drivers code<br>
+int main(){<br>
+    int a = 22, b = 1231;<br>
+    &emsp;&emsp;cout << largestNum(a, b);<br>
+ 
+    &emsp;&emsp;return 0;<br>
+}<br>
+
+</p>
+
+  <a href="https://www.geeksforgeeks.org/find-largest-two-distinct-numbers-without-using-conditional-statements-operators/">Published in GeeksforGeeks</a>
+  <div class="date">
+    Written on May 14, 2018 by Ujjwal Aryal
+  </div>
+<!-- Problem 2 -->
+
+
+<br><br><br><br><br>
 <div class="wrapper-footer">
 <div class="container">
       <footer class="footer">
