@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" type="image/png" href="image.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="photos/image.jpg" sizes="32x32" />
     <title>Ujjwal Aryal - 3rd Year CSE Undergrad</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="https://ujjwalaryal.github.io/" class="site-avatar"><img src="image.jpg" /></a>
+          <a href="https://ujjwalaryal.github.io/" class="site-avatar"><img src="photos/image.jpg" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="https://ujjwalaryal.github.io/">Ujjwal Aryal</a></h1>
@@ -20,9 +19,9 @@
 
           <nav>
             <a href="https://ujjwalaryal.blogspot.com/">Blog</a>
-            <a href="about.html">About</a>
+            <a href="html/about.html">About</a>
             <a href="https://github.com/ujjwalaryal">GitHub</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="photos/gallery.html">Gallery</a>
             <a href="resume.pdf" target="_blank">Resume</a>
           </nav>
         </header>
@@ -62,13 +61,13 @@ so, you should get only 01000 i.e 8.<br>
 <p>
 // C program to extract k bits from a given position.<br>
 #include<stdio.h> <br>
- 
+
 // Function to extract k bits from p position<br>
 // and returns the extracted value as integer<br>
 int bitExtracted(int number, int k, int p){<br>
     &emsp;&emsp;return (((1 << k) - 1) & (number >> (p - 1)));<br>
 }<br>
- 
+
 // Driver code<br>
 int main(){
     &emsp;&emsp;int number = 171, k = 5, p = 2;<br>
@@ -113,12 +112,12 @@ using namespace std;<br>
 int largestNum(int a, int b){<br>
     &emsp;&emsp;return a * (bool)(a / b) + b * (bool)(b / a);<br>
 }<br>
- 
+
 // Drivers code<br>
 int main(){<br>
     int a = 22, b = 1231;<br>
     &emsp;&emsp;cout << largestNum(a, b);<br>
- 
+
     &emsp;&emsp;return 0;<br>
 }<br>
 
@@ -135,7 +134,7 @@ int main(){<br>
 <div class="wrapper-footer">
 <div class="container">
       <footer class="footer">
-          
+
       <a href="mailto:ujjwalaryal.1601064@srec.ac.in"><i class="svg-icon email"></i></a>
       <a href="https://www.facebook.com/ujjwal.aryal.56"><i class="svg-icon facebook"></i></a>
       <a href="https://github.com/UjjwalAryal"><i class="svg-icon github"></i></a>
