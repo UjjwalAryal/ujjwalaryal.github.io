@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="../photos/image.jpg" sizes="32x32" />
+    <title>Ujjwal Aryal - 3rd Year CSE Undergrad</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="../index.html" class="site-avatar"><img src="../photos/image.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="../index.html">Ujjwal Aryal</a></h1>
+            <p class="site-description">3rd Year CSE Undergrad</p>
+          </div>
+
+          <nav>
+            <a href="https://ujjwalaryal.blogspot.com/">Blog</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/ujjwalaryal">GitHub</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../photos/resume.pdf" target="_blank">Resume</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+
+	 <div id="main" role="main" class="container">
+      <article class="post">
+      <div dir="ltr" style="text-align: left;" trbidi="on">
+<h2 style="text-align: left;">
+<span style="font-family: &quot;helvetica neue&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">C Obfuscate Program Series - 1</span></h2>
+<h3 style="text-align: left;">
+<b><span style="font-family: &quot;helvetica neue&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Can you try to find output of the following program?</span></b></h3>
+<div>
+<span style="font-family: &quot;helvetica neue&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><i>(I will update the solution within someday.)</i></span></div>
+<div>
+<span style="font-family: &quot;helvetica neue&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><i><br /></i></span></div>
+<div>
+<span style="font-family: &quot;helvetica neue&quot; , &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><i><br /></i></span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"></span><br />
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">#include&lt;stdio.h&gt;</span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">
+<div>
+#include&lt;string.h&gt;</div>
+<div>
+<br /></div>
+<div>
+int main(){</div>
+<div>
+&nbsp; &nbsp; int n,i,s;</div>
+<div>
+&nbsp; &nbsp; scanf("%d",&amp;n);</div>
+<div>
+&nbsp; &nbsp;&nbsp;</div>
+<div>
+&nbsp; &nbsp; char a[] ="*****************************************************************";</div>
+<div>
+&nbsp; &nbsp; char b[] ="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb";</div>
+<div>
+&nbsp; &nbsp; char ii[] ="iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii";</div>
+<div>
+<br /></div>
+<div>
+&nbsp; &nbsp; printf("%s\n", (a + (sizeof(char) * (65 - n * 2 + 1))));</div>
+<div>
+&nbsp; &nbsp;&nbsp;</div>
+<div>
+&nbsp; &nbsp; for(i = 1,s = 2 * n - 1 - 4; i &lt; n; i++,s -= 2){</div>
+<div>
+&nbsp; &nbsp; &nbsp; &nbsp; printf("%s%s%s%s%s\n", b + sizeof(char) * (65 - i), "*", ii + sizeof(char) * (65 - s), (i!=(n-1))? "*": "",b + sizeof(char) * (65 - i));</div>
+<div>
+&nbsp; &nbsp; }</div>
+<div>
+&nbsp; &nbsp; return 0;</div>
+<div>
+}</div>
+<div>
+<br />
+<br />
+<div style="clear: both; font-family: &quot;Times New Roman&quot;; text-align: right;">
+<span style="background-color: white; font-family: &quot;purisa&quot; , serif;"><b><span style="font-size: large;">UJJWAL ARYAL</span></b></span></div>
+<div style="clear: both; font-family: &quot;Times New Roman&quot;; text-align: right;">
+<b style="background-color: white; font-family: purisa, serif;"><i><span style="font-size: x-small;">Published on Aug 7th 2019</span></i></b></div>
+</div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+</span></div>
+</div>
+
+      
+</article></div>
+</body>
+
+<br><br><br><br><br>
+<div class="wrapper-footer">
+<div class="container">
+      <footer class="footer">
+
+      <a href="mailto:ujjwalaryal.1601064@srec.ac.in"><i class="svg-icon email"></i></a>
+      <a href="https://www.facebook.com/ujjwal.aryal.56"><i class="svg-icon facebook"></i></a>
+      <a href="https://github.com/UjjwalAryal"><i class="svg-icon github"></i></a>
+      <a href="https://stackoverflow.com/users/7784741/ujjwal-aryal"><i class="svg-icon stackoverflow"></i></a>
+      <a href="https://www.twitter.com/ujjwalaryal"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+        </div>
+    </div>
+    </html>
