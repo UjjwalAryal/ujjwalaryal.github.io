@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="../photos/image.jpg" sizes="32x32" />
+    <title>Ujjwal Aryal - 4th Year CSE Undergrad</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="https://ujjwalaryal.github.io" class="site-avatar"><img src="../photos/image.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="https://ujjwalaryal.github.io">Ujjwal Aryal</a></h1>
+            <p class="site-description">4th Year CSE Undergrad</p>
+          </div>
+
+          <nav>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/ujjwalaryal">GitHub</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../photos/resume.pdf" target="_blank">Resume</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+
+<!--#######################################################################################################-->
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Some Cool Programming Problems</h1>
+
+
+<!-- Problem 2 -->
+<h2><strong>Largest of two distinct numbers without using any conditional statements or operators</strong></h2>
+<p>Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C++/Java).<br><br>
+</p> <h4> Examples<br></h4>
+<p>
+1. Input : a = 14, b = 15<br>
+   &emsp;Output : 15<br>
+
+2. Input: a = 1233133, b = 124<br>
+   &emsp;Output: 1233133 <br>
+</p>
+<h4><strong>Solution</strong></h4>
+<p>
+The approach is to return the value on the basis of the below expression:<br>
+
+&emsp;&emsp;&emsp;&emsp;<strong>a * (bool)(a / b) + b * (bool)(b / a)</strong><br>
+
+The expression a / b will give 1 if a > b and 0 if a < b (only after typecasting the result to bool).
+Hence, the answer will be of the form either a + 0 or 0 + b depending upon which one is greater.<br>
+</p>
+<h4><strong>Program</strong></h4>
+<p>
+// C++ program for above implementation<br>
+#include <iostream><br>
+using namespace std;<br>
+// Function to find the largest number<br>
+int largestNum(int a, int b){<br>
+    &emsp;&emsp;return a * (bool)(a / b) + b * (bool)(b / a);<br>
+}<br>
+
+// Drivers code<br>
+int main(){<br>
+    int a = 22, b = 1231;<br>
+    &emsp;&emsp;cout << largestNum(a, b);<br>
+
+    &emsp;&emsp;return 0;<br>
+}<br>
+
+</p>
+
+  <a href="https://www.geeksforgeeks.org/find-largest-two-distinct-numbers-without-using-conditional-statements-operators/">Published in GeeksforGeeks</a>
+  <div class="date">
+    Written on May 14, 2018 by Ujjwal Aryal
+  </div>
+<!-- Problem 2 finshed-->
+<br><br><br><br><br>
+<div class="wrapper-footer">
+<div class="container">
+      <footer class="footer">
+
+      <a href="mailto:ujjwalaryal.1601064@srec.ac.in"><i class="svg-icon email"></i></a>
+      <a href="https://www.facebook.com/ujjwal.aryal.56"><i class="svg-icon facebook"></i></a>
+      <a href="https://github.com/UjjwalAryal"><i class="svg-icon github"></i></a>
+      <a href="https://stackoverflow.com/users/7784741/ujjwal-aryal"><i class="svg-icon stackoverflow"></i></a>
+      <a href="https://www.twitter.com/ujjwalaryal"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

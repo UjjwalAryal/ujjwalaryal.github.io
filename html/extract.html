@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="../photos/image.jpg" sizes="32x32" />
+    <title>Ujjwal Aryal - 4th Year CSE Undergrad</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="https://ujjwalaryal.github.io" class="site-avatar"><img src="../photos/image.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="https://ujjwalaryal.github.io">Ujjwal Aryal</a></h1>
+            <p class="site-description">4th Year CSE Undergrad</p>
+          </div>
+
+          <nav>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/ujjwalaryal">GitHub</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../photos/resume.pdf" target="_blank">Resume</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+
+<!--#######################################################################################################-->
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Some Cool Programming Problems</h1>
+
+<!-- Problem 1 -->
+<h2><strong>Extract ‘k’ bits from a given position in a number.</strong></h2>
+<p>How to extract ‘k’ bits from a given position ‘p’ in a number?<br><br>
+</p> <h4> Examples<br></h4>
+<p>
+1. Input : number = 171<br>
+&emsp;&emsp;&emsp;&emsp;k = 5<br>
+&emsp;&emsp;&emsp;&emsp;p = 2<br>
+&emsp;Output : The extracted number is 21
+171 is represented as 0101011 in binary,
+so, you should get only 10101 i.e. 21.<br><br>
+2. Input : number = 72<br>
+&emsp;&emsp;&emsp;&emsp;k = 5<br>
+&emsp;&emsp;&emsp;&emsp;p = 1<br>
+&emsp;Output : The extracted number is 8
+72 is represented as 1001000 in binary,
+so, you should get only 01000 i.e 8.<br>
+</p>
+<h4><strong>Solution</strong></h4>
+<p>
+  1. Right shift number by p-1.<br>
+  2. Do bit wise AND of k set bits with the modified number. We can get k set bits by doing (1 << k) – 1.<br>
+</p>
+<h4><strong>Program</strong></h4>
+<p>
+// C program to extract k bits from a given position.<br>
+#include<stdio.h> <br>
+
+// Function to extract k bits from p position<br>
+// and returns the extracted value as integer<br>
+int bitExtracted(int number, int k, int p){<br>
+    &emsp;&emsp;return (((1 << k) - 1) & (number >> (p - 1)));<br>
+}<br>
+
+// Driver code<br>
+int main(){
+    &emsp;&emsp;int number = 171, k = 5, p = 2;<br>
+    &emsp;&emsp;printf("The extracted number is %d",bitExtracted(number, k, p));<br>
+    &emsp;&emsp;return 0;<br>
+}<br>
+
+</p>
+
+  <a href="https://www.geeksforgeeks.org/extract-k-bits-given-position-number/">Published in GeeksforGeeks</a>
+  <div class="date">
+    Written on December 20, 2017 by Ujjwal Aryal
+  </div>
+<!-- Problem 1 finshed-->
+
+<br><br><br><br><br>
+<div class="wrapper-footer">
+<div class="container">
+      <footer class="footer">
+
+      <a href="mailto:ujjwalaryal.1601064@srec.ac.in"><i class="svg-icon email"></i></a>
+      <a href="https://www.facebook.com/ujjwal.aryal.56"><i class="svg-icon facebook"></i></a>
+      <a href="https://github.com/UjjwalAryal"><i class="svg-icon github"></i></a>
+      <a href="https://stackoverflow.com/users/7784741/ujjwal-aryal"><i class="svg-icon stackoverflow"></i></a>
+      <a href="https://www.twitter.com/ujjwalaryal"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
