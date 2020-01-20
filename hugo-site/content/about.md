@@ -8,5 +8,5 @@ date = "2014-04-09"
 Heyy there,  
 I will be upodated soon !!!
 
-![](/img/image.png)
-![](/img/resume.pdf)
+![..](/img/image.png)
+![..](/img/resume.pdf)
