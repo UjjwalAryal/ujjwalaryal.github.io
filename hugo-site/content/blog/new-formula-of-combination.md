@@ -1,7 +1,7 @@
 ---
 author:
   name: "Ujjwal Aryal"
-date: 2018-07-29
+date: 2018-07-15
 linktitle: A New Formula of Combination !!! 
 type:
 - post
