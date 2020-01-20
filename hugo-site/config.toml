@@ -123,4 +123,4 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "resume/"
+    url        = "img/resume.pdf"
