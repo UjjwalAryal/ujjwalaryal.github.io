@@ -5,5 +5,13 @@ date = "2014-04-09"
   name = "Ujjwal Aryal"
 +++
 
-Heyy there,  
-I will be updated soon !!!
+## Short Biography
+
+
+## Personal Details
+
+
+* ### Hobbies
+    * Travelling
+    * Programming Problems
+    * Puzzles
