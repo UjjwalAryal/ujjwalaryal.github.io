@@ -14,25 +14,25 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
 # googleAnalytics = ""
 # disqusShortname = ""
 
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
+# archetypeDir = "archetypes"
+# contentDir   = "content"
+# dataDir      = "data"
+# layoutDir    = "layouts"
+# publishDir   = "public"
 
-buildDrafts  = false
-buildFuture  = false
-buildExpored = false
-canonifyURLs = true
+# buildDrafts  = false
+# buildFuture  = false
+# buildExpored = false
+# canonifyURLs = true
 
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
+# enableRobotsTXT = true
+# enableGitInfo   = false
+# enableEmoji     = true
+# enableMissingTranslationPlaceholders = false
+# disableRSS     = false
+# disableSitemap = false
+# disable404     = false
+# disableHugoGeneratorInject = false
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
