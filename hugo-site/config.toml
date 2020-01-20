@@ -91,7 +91,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/"
+    url  = "https://twitter.com/ujjwalarryal"
 
   [[params.social]]
     name = "email"
@@ -103,7 +103,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    url  = "https://stackoverflow.com/users/7784741/ujjwal-aryal"
 
 
 
