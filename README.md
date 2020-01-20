@@ -1,1 +1,0 @@
-HUGO Powered Personal WebSite.
