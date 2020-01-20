@@ -12,7 +12,7 @@ cd ..
 # Add changes to git.
 git add .
 
-#Commit Changes.
+# Commit Changes.
 msg="rebuilding site $(date)"
 
 if [ -n "$*" ]; then
@@ -21,5 +21,8 @@ fi
 
 git commit -m "$msg"
 
-#Push source and build repos
+# Push source and build repos
 git push origin master
+
+# Come Back to last directory
+cd hugo-site
