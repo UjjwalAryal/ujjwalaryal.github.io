@@ -1,4 +1,4 @@
-baseURL = "https://ujjwalaryal.github.io"
+baseURL = "https://ujjwalaryal.github.io/"
 title   = "Hello World !!!"
 
 DefaultContentLanguage = "en"
