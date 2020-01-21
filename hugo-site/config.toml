@@ -13,26 +13,6 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
 # googleAnalytics = ""
 # disqusShortname = ""
 
-# archetypeDir = "archetypes"
-# contentDir   = "content"
-# dataDir      = "data"
-# layoutDir    = "layouts"
-# publishDir   = "public"
-
-# buildDrafts  = false
-# buildFuture  = false
-# buildExpored = false
-# canonifyURLs = true
-
-# enableRobotsTXT = true
-# enableGitInfo   = false
-# enableEmoji     = true
-# enableMissingTranslationPlaceholders = false
-# disableRSS     = false
-# disableSitemap = false
-# disable404     = false
-# disableHugoGeneratorInject = false
-
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
@@ -52,7 +32,7 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  homeSubtitle = "Ujjwal Aryal"
+  homeSubtitle = "Hello World !!!"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
