@@ -1,5 +1,5 @@
 baseURL = "https://ujjwalaryal.github.io/"
-title   = "Hello World !!!"
+title   = "Ujjwal Aryal"
 
 DefaultContentLanguage = "en"
 
@@ -68,7 +68,7 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
 
-  # Directory name of your blog content (default is `content/posts`)
+  # Directory name of your blog content (default is `content/blog`)
   contentTypeName = "blog"
 
   # Default theme "light" or "dark"
