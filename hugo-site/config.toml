@@ -52,7 +52,7 @@ rssLimit  = 10  # Maximum number of items in the RSS feed.
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  homeSubtitle = "Hello World !!!"
+  homeSubtitle = "Ujjwal Aryal"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
