@@ -11,7 +11,7 @@ PygmentsStyle = "monokai"
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 
 # googleAnalytics = ""
-# disqusShortname = ""
+disqusShortname = "ujjwalaryal"
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
