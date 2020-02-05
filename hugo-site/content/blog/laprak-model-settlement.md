@@ -2,11 +2,11 @@
 author:
   name: "Ujjwal Aryal"
 date: 2020-01-21
-linktitle: Laprak Model Settlement - Resurgam or death of diversity ? - Draft
+linktitle: Laprak Model Settlement - Resurgam or death of diversity?
 type:
 - post
 - posts
-title: Laprak Model Settlement - Resurgam or death of diversity ? - Draft
+title: Laprak Model Settlement - Resurgam or death of diversity?
 weight: 10
 series:
 - 
