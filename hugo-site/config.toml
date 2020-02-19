@@ -1,4 +1,3 @@
-#https://themes.gohugo.io/loveit/
 baseURL = "https://ujjwalaryal.github.io/"
 title   = "Ujjwal Aryal"
 
@@ -70,6 +69,19 @@ disqusShortname = "ujjwalaryal"
     logoHomeLink = "/"
     # Set to a valid CSS color to change the cursor in the logo.
     # logoColor    = "#67a2c9"
+
+  # mathematical formulas (KaTeX)
+  [params.math]
+    enable = true
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    inlineLeftDelimiter = "$"
+    inlineRightDelimiter = "$"
+    # KaTeX extension copy_tex
+    copyTex = true
+    # KaTeX extension mhchem
+    mhchem = true
+
 
   # Social icons
   [[params.social]]
