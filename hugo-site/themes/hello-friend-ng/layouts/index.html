@@ -1,6 +1,10 @@
 {{ define "main" }}
     <main aria-role="main">
         <div>
+            {{ with .Site.Params.avatarurl }}
+            <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+            {{ end }}
+            
             <h1>{{ .Site.Title }}</h1>
 
             {{- with .Site.Params.homeSubtitle }}

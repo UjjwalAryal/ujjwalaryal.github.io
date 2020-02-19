@@ -56,6 +56,9 @@ disqusShortname = "ujjwalaryal"
   defaultTheme = "dark"
   themeColor = "#252627"
 
+  # Image for home page
+  avatarurl = "img/photo.jpg"
+
   # Colors for favicons
   [params.favicon.color]
     mask = "#252627"
