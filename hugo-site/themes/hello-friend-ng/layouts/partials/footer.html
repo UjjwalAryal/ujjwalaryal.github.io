@@ -15,7 +15,7 @@
 </footer>
 
 </body>
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
+{{ if .Site.Params.math }}
+    {{ partial "math.html" . }}
 {{ end }}
 </html>

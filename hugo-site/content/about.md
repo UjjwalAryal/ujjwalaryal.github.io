@@ -17,9 +17,3 @@ markup = "mmark"
     * Travelling
     * Programming Problems
     * Puzzles
-
-The following
-
-$\int_{a}^{b} x^2 dx$
-
-Is an integral
