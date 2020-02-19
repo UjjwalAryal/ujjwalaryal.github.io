@@ -5,19 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="map[name:Ujjwal Aryal]">
-<meta name="description" content="Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C&#43;&#43;/Java). Examples  Input : a = 14, b = 15
-Output : 15 Input: a = 1233133, b = 124
-Output: 1233133  Solution The approach is to return the value on the basis of the below expression:
-a * (bool)(a / b) &#43; b * (bool)(b / a)" />
+<meta name="description" content="How to extract ‘k’ bits from a given position ‘p’ in a number? Examples   Input : number = 171
+k = 5
+p = 2
+Output : The extracted number is 21 171 is represented as 0101011 in binary, so, you should get only 10101 i.e. 21.
+  Input : number = 72
+k = 5
+p = 1
+Output : The extracted number is 8 72 is represented as 1001000 in binary, so, you should get only 01000 i." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://ujjwalaryal.github.io/blog/largest-of-two-numbers/" />
+<link rel="canonical" href="https://ujjwalaryal.github.io/blog/extract-k-bits-from-p-position/" />
 
 
     <title>
         
-            Largest of two distinct numbers without using any conditional statements or operators :: Ujjwal Aryal 
+            Extract ‘k’ bits from a given position in a number :: Ujjwal Aryal 
         
     </title>
 
@@ -28,7 +32,7 @@ a * (bool)(a / b) &#43; b * (bool)(b / a)" />
 
 
 
-<link rel="stylesheet" href="/main.min.6365ae9c425f390981dbe35e2dbcd5d5878065daff5d89535b856746843b35ef.css">
+<link rel="stylesheet" href="/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
 
 
 
@@ -42,29 +46,37 @@ a * (bool)(a / b) &#43; b * (bool)(b / a)" />
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Largest of two distinct numbers without using any conditional statements or operators">
-<meta itemprop="description" content="Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C&#43;&#43;/Java). Examples  Input : a = 14, b = 15
-Output : 15 Input: a = 1233133, b = 124
-Output: 1233133  Solution The approach is to return the value on the basis of the below expression:
-a * (bool)(a / b) &#43; b * (bool)(b / a)">
-<meta itemprop="datePublished" content="2018-05-14T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-05-14T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="178">
+<meta itemprop="name" content="Extract ‘k’ bits from a given position in a number">
+<meta itemprop="description" content="How to extract ‘k’ bits from a given position ‘p’ in a number? Examples   Input : number = 171
+k = 5
+p = 2
+Output : The extracted number is 21 171 is represented as 0101011 in binary, so, you should get only 10101 i.e. 21.
+  Input : number = 72
+k = 5
+p = 1
+Output : The extracted number is 8 72 is represented as 1001000 in binary, so, you should get only 01000 i.">
+<meta itemprop="datePublished" content="2017-12-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="189">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Largest of two distinct numbers without using any conditional statements or operators"/>
-<meta name="twitter:description" content="Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C&#43;&#43;/Java). Examples  Input : a = 14, b = 15
-Output : 15 Input: a = 1233133, b = 124
-Output: 1233133  Solution The approach is to return the value on the basis of the below expression:
-a * (bool)(a / b) &#43; b * (bool)(b / a)"/>
+<meta name="twitter:title" content="Extract ‘k’ bits from a given position in a number"/>
+<meta name="twitter:description" content="How to extract ‘k’ bits from a given position ‘p’ in a number? Examples   Input : number = 171
+k = 5
+p = 2
+Output : The extracted number is 21 171 is represented as 0101011 in binary, so, you should get only 10101 i.e. 21.
+  Input : number = 72
+k = 5
+p = 1
+Output : The extracted number is 8 72 is represented as 1001000 in binary, so, you should get only 01000 i."/>
 
 
 
 
 
-    <meta property="article:published_time" content="2018-05-14 00:00:00 &#43;0000 UTC" />
+    <meta property="article:published_time" content="2017-12-20 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -125,41 +137,48 @@ a * (bool)(a / b) &#43; b * (bool)(b / a)"/>
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://ujjwalaryal.github.io/blog/largest-of-two-numbers/">Largest of two distinct numbers without using any conditional statements or operators</a></h2>
+            <h2 class="post-title"><a href="https://ujjwalaryal.github.io/blog/extract-k-bits-from-p-position/">Extract ‘k’ bits from a given position in a number</a></h2>
 
             
 
             <div class="post-content">
-                <h3 id="given-two-positive-and-distinct-numbers-the-task-is-to-find-the-greatest-of-two-given-numbers-without-using-any-conditional-statementsif-and-operators-in-ccjava">Given two positive and distinct numbers, the task is to find the greatest of two given numbers without using any conditional statements(if…) and operators(?: in C/C++/Java).</h3>
+                <h3 id="how-to-extract-k-bits-from-a-given-position-p-in-a-number">How to extract ‘k’ bits from a given position ‘p’ in a number?</h3>
 <h4 id="examples">Examples</h4>
 <ol>
-<li>Input : a = 14, b = 15<br>
-Output : 15</li>
-<li>Input: a = 1233133, b = 124<br>
-Output: 1233133</li>
+<li>
+<p>Input : number = 171<br>
+    k = 5<br>
+    p = 2<br>
+Output : The extracted number is 21 171 is represented as 0101011 in binary, so, you should get only 10101 i.e. 21.</p>
+</li>
+<li>
+<p>Input : number = 72<br>
+    k = 5<br>
+    p = 1<br>
+Output : The extracted number is 8 72 is represented as 1001000 in binary, so, you should get only 01000 i.e 8.</p>
+</li>
 </ol>
 <h4 id="solution">Solution</h4>
-<p>The approach is to return the value on the basis of the below expression:<br>
-    a * (bool)(a / b) + b * (bool)(b / a)<br>
-The expression a / b will give 1 if a &gt; b and 0 if a &lt; b (only after typecasting the result to bool). Hence, the answer will be of the form either a + 0 or 0 + b depending upon which one is greater.</p>
+<ol>
+<li>Right shift number by p-1.</li>
+<li>Do bit wise AND of k set bits with the modified number. We can get k set bits by doing (1 &laquo; k) – 1.</li>
+</ol>
 <h4 id="program">Program</h4>
-<pre><code>// C++ program for above implementation
-#include&lt;iostream&gt;
-
-using namespace std;
-
-// Function to find the largest number
-int largestNum(int a, int b){
-    return a * (bool)(a / b) + b * (bool)(b / a);
+<pre><code>// C program to extract k bits from a given position.
+#include&lt;stdio.h&gt;
+// Function to extract k bits from p position
+// and returns the extracted value as integer
+int bitExtracted(int number, int k, int p){
+  return (((1 &lt;&lt; k) - 1) &amp; (number &gt;&gt; (p - 1)));
 }
 
-// Drivers code
-int main(){
-    int a = 22, b = 1231;
-    cout &lt;&lt; largestNum(a, b);
-    return 0;
+// Driver code
+int main(){   
+  int number = 171, k = 5, p = 2;
+  printf(&quot;The extracted number is %d&quot;,bitExtracted(number, k, p));
+  return 0;
 }
-</code></pre><p><a href="https://www.geeksforgeeks.org/find-largest-two-distinct-numbers-without-using-conditional-statements-operators/">Published in GeeksforGeeks</a></p>
+</code></pre><p><a href="https://www.geeksforgeeks.org/extract-k-bits-given-position-number/">Published in GeeksforGeeks</a></p>
 
             </div>
         </article>
