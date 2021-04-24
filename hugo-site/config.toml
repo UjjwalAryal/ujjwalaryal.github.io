@@ -86,7 +86,7 @@ disqusShortname = "ujjwalaryal"
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/ujjwalarryal"
+    url  = "https://twitter.com/_ujjwalaryal"
 
   [[params.social]]
     name = "email"
